@@ -8,9 +8,11 @@ namespace MVC_AtoZ.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        //controller action 
+        public string Index(string id, string name )
         {
-            return View();
+            // Insead of using Request.QueryString["name"] we can simply use query string name to index parameter ;
+            return "id = " + id + "  Name = " + name; 
         }
 
         public ActionResult About()

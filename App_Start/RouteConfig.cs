@@ -12,7 +12,8 @@ namespace MVC_AtoZ
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            
+            //default route so by default it will intialize Home/Index/
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
