@@ -9,10 +9,10 @@ namespace MVC_AtoZ.Controllers
     public class HomeController : Controller
     {
         //controller action 
-        public string Index(string id, string name )
+        public ViewResult Index()
         {
-            // Insead of using Request.QueryString["name"] we can simply use query string name to index parameter ;
-            return "id = " + id + "  Name = " + name; 
+            ViewBag.Countries = new List<string> { "USA", "Canada", "Mexico" };
+            return View();
         }
 
         public ActionResult About()
