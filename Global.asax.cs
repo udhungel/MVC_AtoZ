@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +13,9 @@ namespace MVC_AtoZ
     {
         protected void Application_Start()
         {
+            // this gets start at the very beginning
+            // SetIntializer- we dont want to have any dabase intilization set to null .
+            Database.SetInitializer<MVC_AtoZ.Models.EmployeeContext>(null);
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -1,4 +1,5 @@
-﻿using MVC_AtoZ.Models;
+﻿using MVC_AtoZ.DataService.DbContextInterface;
+using MVC_AtoZ.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +10,26 @@ namespace MVC_AtoZ.Controllers
 {
     public class EmployeeController : Controller
     {
+        private readonly IEmployeeService _myempService;
+
+        public EmployeeController(IEmployeeService serv)
+        {
+            _myempService = serv;
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+
+
         // GET: Employee
         public ActionResult Details()
-        {
-            Employee emp = new Employee()
-                        {   
-                            EmployeeId = 1
-                           ,City = "Philly"
-                           ,Gender = "Male"
-                           ,Name = "Joe" 
-                        };
+        {           
+            var result = _myempService.GetEmployees().Single(x => x.EmployeeId == 1);
 
-            return View(emp);
+            return View(result);
         }
     }
 }
