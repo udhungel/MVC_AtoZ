@@ -5,9 +5,9 @@
 <h2>Countries</h2>
 
 <ul>
-    @foreach (var item in ViewBag.Countries)
+    @foreach (var country in (List<string>)ViewData["Countries"])
     {
-        <li>@item</li>
+        <li>@country</li>
 
     }
 </ul>

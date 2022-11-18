@@ -11,7 +11,7 @@ namespace MVC_AtoZ.Controllers
         //controller action 
         public ViewResult Index()
         {
-            ViewBag.Countries = new List<string> { "USA", "Canada", "Mexico" };
+            ViewData["Countries"] = new List<string> { "USA", "Canada", "Mexico" };
             return View();
         }
 
