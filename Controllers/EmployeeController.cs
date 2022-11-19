@@ -19,15 +19,16 @@ namespace MVC_AtoZ.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var employees = _myempService.GetEmployees();
+            return View(employees);
         }
 
 
 
         // GET: Employee
-        public ActionResult Details()
+        public ActionResult Details(int id )
         {           
-            var result = _myempService.GetEmployees().Single(x => x.EmployeeId == 1);
+            var result = _myempService.GetEmployees().Single(x => x.EmployeeId == id);
 
             return View(result);
         }

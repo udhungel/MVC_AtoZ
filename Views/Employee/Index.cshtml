@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MVC_AtoZ.Models.Employee>
+
+@{
+    ViewBag.Title = "Employee List";
+}
+@*This is where our employee model class resides*@
+@*now we could say @Model for eg in the iteration*@  
+@using MVC_AtoZ.Models;
+
+<h2>Index</h2>
+
+<div style="font-family:Arial">
+    <h2>Employee List</h2>
+    <ul>
+        @foreach (var employee in @Model)
+        {
+            <li>
+                @Html.ActionLink(employee.Name, "Details", new { id = employee.EmployeeId })
+            </li>
+
+        }
+    </ul>
+</div>
+
