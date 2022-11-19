@@ -75,3 +75,7 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/obj/Debug/build.force
+/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/obj/Debug/MVC_AtoZ.csproj.AssemblyReference.cache
