@@ -17,9 +17,9 @@ namespace MVC_AtoZ.Controllers
             _myempService = serv;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int departmentId)
         {
-            var employees = _myempService.GetEmployees();
+            var employees = _myempService.GetEmployees().Where(x=>x.departmentID == departmentId);
             return View(employees);
         }
 

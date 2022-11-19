@@ -10,5 +10,8 @@ namespace MVC_AtoZ.Models
     {
         public DbSet<Employee> Employees { get; set; }
 
+
+        public DbSet<Department> Department { get; set; }
+
     }
 }

@@ -4,7 +4,7 @@
     ViewBag.Title = "Employee List";
 }
 @*This is where our employee model class resides*@
-@*now we could say @Model for eg in the iteration*@  
+@*now we could say @Model for eg in the iteration*@
 @using MVC_AtoZ.Models;
 
 <h2>Index</h2>
@@ -21,4 +21,4 @@
         }
     </ul>
 </div>
-
+@Html.ActionLink("Back to Department", "Index", "Department")

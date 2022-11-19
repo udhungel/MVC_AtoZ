@@ -14,5 +14,7 @@ namespace MVC_AtoZ.Models
         public string Gender { get; set; }
 
         public string City { get; set; }
+
+        public int departmentID { get; set; }
     }
 }

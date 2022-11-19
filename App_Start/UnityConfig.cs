@@ -16,7 +16,8 @@ namespace MVC_AtoZ
             // it is NOT necessary to register your controllers
             
              container.RegisterType<IEmployeeService, EmployeeDataService>();
-            
+            container.RegisterType<IDepartmentService, DepartmentDataService>();
+
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

@@ -1,0 +1,35 @@
+﻿@using MVC_AtoZ.Models;
+@model IEnumerable<MVC_AtoZ.Models.Department>
+
+@{
+    ViewBag.Title = "Department List ";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var department in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => department.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Index", "Employee", new { departmentId = department.ID }, null)  @*need to pass the Employee index with the departmentID*@
+
+            </td>
+        </tr>
+    }
+
+</table>
+
