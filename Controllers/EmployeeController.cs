@@ -23,9 +23,11 @@ namespace MVC_AtoZ.Controllers
             return View(employees);
         }
 
-
-
-        // GET: Employee
+        [HttpGet]
+        public ActionResult Create() 
+        {
+            return View();
+        }
         public ActionResult Details(int id )
         {           
             var result = _myempService.GetEmployees().Single(x => x.EmployeeId == id);
