@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Restaurant_MicroService/.vs/MangoRestaurant/v17/.suo
+/Restaurant_MicroService/.vs/Restaurant_MicroService/FileContentIndex/068f3707-4459-4c17-abf4-cfe8f63f1bc6.vsidx
+*.vsidx
+/Restaurant_MicroService/.vs/Restaurant_MicroService/FileContentIndex/78a922b2-0a2d-4fb8-a76e-f9e175a4bc47.vsidx
+/Restaurant_MicroService/.vs/Restaurant_MicroService/FileContentIndex/9a763a9b-7d22-4b0b-be32-36542ba56433.vsidx
+/Mango.Services.CouponAPI/bin/Debug/net7.0/Mango.Services.CouponAPI.dll
+/Mango.Services.CouponAPI/bin/Debug/net7.0/Mango.Services.CouponAPI.pdb
+/Mango.Services.CouponAPI/bin/Debug/net7.0/appsettings.json
+/Mango.Services.CouponAPI/obj/Debug/net7.0/ref/Mango.Services.CouponAPI.dll
+/Mango.Services.CouponAPI/obj/Debug/net7.0/refint/Mango.Services.CouponAPI.dll
+/Mango.Services.CouponAPI/obj/Debug/net7.0/Mango.Services.CouponAPI.csproj.CoreCompileInputs.cache
+/Mango.Services.CouponAPI/obj/Debug/net7.0/Mango.Services.CouponAPI.dll
+/Mango.Services.CouponAPI/obj/Debug/net7.0/Mango.Services.CouponAPI.pdb
